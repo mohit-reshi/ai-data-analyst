@@ -1,0 +1,29 @@
+# --- Python / uv ---
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# --- secrets: never commit ---
+.env
+.env.local
+
+# --- data: Kaggle license + size; never commit ---
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# --- private learning state + coordination scratch (local only) ---
+.learning/
+.coord/*.local.*
+
+# --- Claude Code personal settings ---
+.claude/settings.local.json
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
